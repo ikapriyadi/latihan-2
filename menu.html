@@ -1,0 +1,215 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.0.min.css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script> 
+$(document).bind("mobileinit", function(){ 
+$.mobile.page.prototype.options.addBackBtn=true; 
+ $.mobile.page.prototype.options.theme="d"; 
+}); 
+</script> 
+<script type="text/javascript" src="js/jquery.mobile-1.0.min.js"></script>
+<script type="text/javascript" src="js/jquiz.js"></script>
+
+ 
+</head> 
+<body> 
+
+<div id='menu' data-role='page'>
+<div data-role='header'>
+<h1>Materi</h1>
+</div>
+
+<div data-role="content">
+		<div class="content-primary">	
+		<ul data-role="listview" data-inset="true">
+			<li><a href="menu.html#intro">
+				<img height="100%" src="images/mysql.jpg" />
+				<h3>Pengertian dan Sejarah MySQL</h3>
+				<p></p>
+			</a></li>
+			<li><a href="menu.html#fitur">
+				<img height="100%" src="images/fitur.jpg" />
+				<h3>Fitur MySQL</h3>
+				<p></p>
+			</a></li>
+			<li><a href="menu.html#install">
+				<img height="100%" src="images/install.jpg" />
+				<h3>Install MySQL</h3>
+				<p></p>
+			</a></li>
+			<li><a href="menu.html#video">
+				<img height="100%" src="images/video.jpg" />
+				<h3>Video Tutorial</h3>
+				<p></p>
+			</a></li>
+		</ul>
+		</div>
+		</div>
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" data-icon="home">Home</a></li>
+			<li><a href="#menu" data-icon="menu">Menu</a></li>
+			<li><a href="contact.html" data-icon="grid" data-rel="dialog" data-transition="flow" data-inline="true">Contact</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div id="intro" data-role="page"> 
+<div data-role="header"> 
+  <h1>Pengertian dan Sejarah MySQL</h1> 
+</div> 
+<div data-role="content"> 
+<p>
+MySQL adalah implementasi dari system manajemen basisdata relasional (RDBMS). 
+MySQL dibuah oleh TcX dan telah dipercaya mengelola system dengan 40 buah database berisi 10.000 tabel dan 500 di antaranya memiliki 7 juta baris. 
+MySQL AB merupakan perusahaan komersial Swedia yang mensponsori dan yang memiliki MySQL. 
+Pendiri MySQL AB adalah dua orang Swedia yang bernama David Axmark, Allan Larsson dan satu orang Finlandia bernama Michael “Monty”. 
+Setiap pengguna MySQL dapat menggunakannya secara bebas yang didistribusikan gratis dibawah lisensi GPL(General Public License) namun tidak boleh menjadikan produk turunan yang bersifat komersial.
+</p> 
+ </div> 
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" data-icon="home">Home</a></li>
+			<li><a href="menu.html" data-icon="menu">Menu</a></li>
+			<li><a href="contact.html" data-icon="grid">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+</div> 
+
+<div id="fitur" data-role="page"> 
+<div data-role="header"> 
+  <h1>Fitur MySQL</h1> 
+</div> 
+<div data-role="content"> 
+
+<p>Fitur - fitur yang ada pada MySQL diantaranya :<br><br>
+			
+	1.  MySQL termasuk dalam software RDBMS (Relationship Database Management System), yaitu merupakan salah satu jenis DBMS yang mendukung adanya hubungan antar tabel.<br>
+	2.  MySQL memiliki arsitektur client-server, dimana server database MySQL terinstal di server. Sementara client dapat berada di komputer yang sama atau di komputer yang berbeda yang terhubung dengan server, termasuk menggunakan jaringan internet<br>
+	3.  MySQL mendukung perintah-perintah SQL (Structured Query Language). SQL merupakan suatu bahasa standar yang berlaku di hampir semua perangkat lunak berbasis database.<br>
+	4.  MySQL juga mendukung Views, Stored Procedured (SP), Triggers, Foreign Key dan Replication.<br>
+	5.  Stabil dan tangguh serta fleksibel dengan berbagai perangkat lunak pemrograman lainnya.<br>
+	6.  Keamanan terjamin.<br>
+	7.  Bersifat free atau gratis.<br>
+	8.  Perkembangan softwarenya termasuk cukup pesat.
+</p>
+ </div> 
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" data-icon="home">Home</a></li>
+			<li><a href="menu.html" data-icon="menu">Menu</a></li>
+			<li><a href="contact.html" data-icon="grid" data-rel="dialog" data-transition="flow" data-inline="true">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+</div> 
+
+<div id="install" data-role="page"> 
+<div data-role="header"> 
+  <h1>Langkah - langkah Penginstallan Aplikasi MySQL</h1> 
+</div> 
+<div data-role="content"> 
+
+<p>Berikut beberapa langkah yang bisa Anda lakukan untuk proses menginstal MySQL di Windows.<br><br>
+			
+	1. Silahkan Anda download file installer MySQL dari situsnya, dengan alamat : http://www.mysql.com/downloads/.<br>
+	2. Kemudian silahkan Anda masuk ke dalam folder tempat file MySQL yang tadi Anda download disimpan. Kemudian double click pada file tersebut untuk memulai proses instalasi.<br>
+	3. Selanjutnya akan muncul jendela yang berisi ucapan selamat datang pada proses setup MySQL. Silahkan klik tombol OK untuk melanjutkan.<br>
+	4. Kemudian pada bagian Setup Type, silahkan Anda memilih tipe dari setup MySQL Anda. Ada tiga pilihan yang ditawarkan, yaitu Typical, Complete dan Custom. Secara default yang terpilih adalah Typical. Kemudian klik tombol Next untuk melanjutkan.<br>
+	5. Selanjutnya muncul jendela Ready to Install the Program yang berisi keterangan tipe setup dan folder tempat file instalasi MySQL akan disimpan. Untuk melanjutkan, silahkan klik tombol Install. Kemudian akan muncul jendela yang berisi progress bar proses instalasi MySQL.<br>
+	6. Kemudian akan jendela Wizard Completed. Ini menunjukkan bahwa proses instalasi sudah berhasil dan selesai. Anda dapat menonaktifkan pada pilihan Configure the MySQL Server Now. Secara default opsi ini terpilih. Kemudian klik tombol Finish untuk mengakhiri.
+</p>	
+
+ </div> 
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" data-icon="home">Home</a></li>
+			<li><a href="menu.html" data-icon="menu">Menu</a></li>
+			<li><a href="contact.html" data-icon="grid">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+</div> 
+
+<div id="kelebihan" data-role="page"> 
+<div data-role="header"> 
+  <h1>Kelebihan dan Kekurangan dari MySQL</h1> 
+</div> 
+<div data-role="content"> 
+
+<p>Kelebihan MySQL :<br><br>
+			
+			1.	Portabilitas. MySQL dapat berjalan stabil pada berbagai sistem operasi seperti Windows, Linux, FreeBSD, Mac Os X Server, Solaris, Amiga, dan masih banyak lagi.<br>
+			2.	Perangkat lunak sumber terbuka. MySQL didistribusikan sebagai perangkat lunak sumber terbuka, dibawah lisensi GPL sehingga dapat digunakan secara gratis.<br>
+			3.	Multi-user. MySQL dapat digunakan oleh beberapa pengguna dalam waktu yang bersamaan tanpa mengalami masalah atau konflik.<br>
+			4.	Performance tuning', MySQL memiliki kecepatan yang menakjubkan dalam menangani query sederhana, dengan kata lain dapat memproses lebih banyak SQL per satuan waktu.<br>
+			5.	Ragam tipe data. MySQL memiliki ragam tipe data yang sangat kaya, seperti signed / unsigned integer, float, double, char, text, date, timestamp, dan lain-lain.<br>
+			6.	Perintah dan Fungsi. MySQL memiliki operator dan fungsi secara penuh yang mendukung perintah Select dan Where dalam perintah (query).<br>
+			7.	Keamanan. MySQL memiliki beberapa lapisan keamanan seperti level subnetmask, nama host, dan izin akses user dengan sistem perizinan yang mendetail serta sandi terenkripsi.<br>
+			8.	Skalabilitas dan Pembatasan. MySQL mampu menangani basis data dalam skala besar, dengan jumlah   rekaman (records) lebih dari 50 juta dan 60 ribu tabel serta 5 milyar baris. Selain itu batas indeks yang dapat ditampung mencapai 32 indeks pada tiap tabelnya.<br>
+			9.	Konektivitas. MySQL dapat melakukan koneksi dengan klien menggunakan protokol TCP/IP, Unix soket (UNIX), atau Named Pipes (NT).<br>
+			10.	Lokalisasi. MySQL dapat mendeteksi pesan kesalahan pada klien dengan menggunakan lebih dari dua puluh bahasa. Meski pun demikian, bahasa Indonesia belum termasuk di dalamnya.<br>
+			11.	Antar Muka. MySQL memiliki antar muka (interface) terhadap berbagai aplikasi dan bahasa pemrograman dengan menggunakan fungsi API (Application Programming Interface).<br>
+			12.	Klien dan Peralatan. MySQL dilengkapi dengan berbagai peralatan (tool)yang dapat    digunakan untuk administrasi basis data, dan pada setiap peralatan yang ada disertakan petunjuk online.<br><br>
+			
+			
+			<p>Kekurangan My SQL :<br><br>
+			
+			1.  Untuk koneksi ke bahasa pemrograman visual seperti vb, delphi, dan foxpro, mysql kurang support, karena koneksi ini menyebabkan field yang dibaca harus sesuai dengan koneksi dari program visual tersebut, dan ini yang menyebabkan mysql jarang dipakai dalam program visual.<br>
+			2.  Data yang ditangani belum begitu besar.<br>
+			3.  Dari sisi security , atau keamanan, yang agak terlalu sederhana bagi sebuah SQL Engine , meskipun tidak sesederhana SQLite yang juga datang dari dunia Open Source dan cukup digemari para Web Developer .
+</p>
+
+ </div> 
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" data-icon="home">Home</a></li>
+			<li><a href="menu.html" data-icon="menu">Menu</a></li>
+			<li><a href="contact.html" data-icon="grid" data-rel="dialog" data-transition="flow" data-inline="true">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+</div> 
+
+<div id="video" data-role="page"> 
+<div data-role="header"> 
+  <h1>Video Pengenalan MySQL</h1> 
+</div> 
+
+<div data-role="content"> 
+<div class="video frame"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/Ff48Ey-z_sU?feature=player_detailpage" frameborder="0" allowfullscreen></iframe><center></div>
+</div> 
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" data-icon="home">Home</a></li>
+			<li><a href="menu.html" data-icon="menu">Menu</a></li>
+			<li><a href="contact.html" data-icon="grid" data-rel="dialog" data-transition="flow" data-inline="true">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+</div> 
+
+
+</body> 
+</html>
